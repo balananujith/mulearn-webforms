@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #bdc3c7, #e0e0e0);
+    overflow-x: hidden; /* Ensure no horizontal scrollbar */
+}
+
+.main-section {
+    width: 100vw;
+    height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent horizontal scrollbars */
+}
+
+.div-one {
+    width: 100%; /* Take full width */
+    max-width: 400px; /* Limit maximum width */
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    max-height: 80vh; /* Example: Set maximum height as 80% of viewport height */
+}
+
+.signin-header-box {
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.signin-header {
+    color: #fff;
+}
+
+.main-head {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main-para {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid #dadada;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+input:focus {
+    border-color: #fe8660;
+    box-shadow: 0 0 5px rgba(254, 134, 96, 0.5);
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #fe8660;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e5754d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.sign-in-redirect {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.sign-in-redirect a {
+    color: #fe8660;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social-sign-in {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-sign-in p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.social-btn {
+    width: 40px; /* Adjust width as per your icon size */
+    height: 40px; /* Adjust height as per your icon size */
+    margin: 0 5px; /* Adjust margin for spacing between buttons */
+    border: none;
+    border-radius: 50%; /* Makes buttons circular */
+    font-size: 0; /* Hide any text */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    width: 100%; /* Ensure the icon fills the button */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.google-btn {
+    background-color: white;
+}
+
+.google-btn:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-btn {
+    background-color: #0077b5;
+}
+
+.linkedin-btn:hover {
+    background-color: #006095;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.github-btn {
+    background-color: white;
+}
+
+.github-btn:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.developer-btn {
+    background-color: white;
+}
+
+.developer-btn:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

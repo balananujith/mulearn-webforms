@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-section">
+        <div class="div-one">
+            <div class="signin-header-box">
+                <div class="signin-header">
+                    <h1 class="main-head">Sign Up</h1>
+                    <p class="main-para">Please enter your details.</p>
+                </div>
+            </div>
+            <form onsubmit="handleSubmit(event)">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder="Enter Password" required>
+                </div>
+                <div class="input-group">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" id="cpass" placeholder="Enter Password" required>
+                </div>
+                <label class="alert" id="alert"></label>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+            <p class="sign-in-redirect">If you already have an account, <a href="#">Sign In</a></p>
+            <div class="social-sign-in">
+                <p>Or sign in with:</p>
+                <button class="social-btn google-btn"><img src="google.png" alt="Google"></button>
+                <button class="social-btn linkedin-btn"><img src="linkedin.png" alt="LinkedIn"></button>
+                <button class="social-btn github-btn"><img src="github.png" alt="GitHub"></button>
+                <button class="social-btn developer-btn"><img src="dev.png" alt="Developer"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
